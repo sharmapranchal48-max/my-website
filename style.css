@@ -1,0 +1,200 @@
+/* Make whole page centre */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;background-color: gray;
+}
+
+/* Navigation Bar */
+
+.navbar{
+    color: white;
+    display: flex;
+justify-content: space-between
+align-items: center;
+background: #333;
+padding: 15px 40px;
+color: white;
+}
+
+.logo{
+    margin: 0;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background: orange;
+}
+
+.feature-box {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.feature-box i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+.feature-box:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+
+.feature-box h2 {
+    margin-bottom: 10px;
+    color: forestgreen;
+}
+
+.hero {
+    height: 90vh;
+    background-color: linear-gardient(to right, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: colomn;
+    align-items: center;
+    writing-mode: horizontal-tb;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: navy;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero-content button: {
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: bleck;
+    border-radius: 5px;
+}
+
+.hero-content button:hover {
+    background-color: black;
+    color: white;
+}
+
+.nav-links{
+    margin-left: 20px;
+}
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover{
+text-decoration: underline;
+}
+/* container style */
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0,2);
+    width: 400px;
+    margin: 60px auto;
+}
+
+/* image */
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+ul{
+    text-align: left;
+    margin-top: 10px;
+    color: red;
+}
+
+li{
+    margin: 8px 0;
+    color: red;
+}
+/* Heading style */
+#heading {
+    font-size: 40px;
+    color: red;
+    margin-bottom: 20px;
+}
+/* Button style */
+#btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: orange;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button hover effect */
+#btn:hover {
+    background-color: #555;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px;) {
+
+    /*Navbar */
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Hero text smaller */
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    /* Features section becomes vertical */
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
